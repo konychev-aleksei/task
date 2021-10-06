@@ -1,6 +1,6 @@
 # DEMO VERSION
 
-Demo website: https://agitated-sinoussi-5f8788.netlify.app/user/index
+Demo website: https://agitated-sinoussi-5f8788.netlify.app
 
 # Getting Started with Create React App
 

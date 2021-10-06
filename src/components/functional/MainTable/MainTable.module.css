@@ -1,0 +1,144 @@
+.area {
+    position: fixed;
+    top: 150px;
+    width: 1200px;
+    height: calc(100% - 175px);
+    overflow: auto;
+}
+
+.styledButton {
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #66FCF1;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 11px;
+
+    transition: .3s;
+}
+
+.styledButton:hover {
+    background-color: #66FCF1;
+}
+
+.grid {
+    position: relative;
+    width: 1200px;
+    height: 50px;
+    background-color: #1f2833;
+    display: flex;
+}
+
+.grid > div {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #0B0C10;
+    word-break: break-word;
+}
+
+.grid > div:nth-child(1), .grid > div:nth-child(2), .grid > div:nth-child(8) {
+    flex: 1;
+}
+
+.grid > div:nth-child(3), .grid > div:nth-child(4), .grid > div:nth-child(5) , .grid > div:nth-child(6), .grid > div:nth-child(7) {
+    flex: 3;
+}
+
+.grid > div:nth-child(6) {
+    flex: 8;
+}
+
+.grid > div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+.grid > div > input {
+    width: 100%;
+    padding: 2px 0;
+    background-color: transparent;
+    border-bottom: 1px solid #66FCF1;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.grid > div > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.major {
+    height: 155px;
+}
+
+.buttonsRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsRow > button {
+    flex: 1;
+    background-color: transparent;
+    transition: .3s;
+    color: #66FCF1;
+}
+
+.buttonsRow > button:hover {
+    color: #06ACA1;
+}
+
+.inlineBirthdate {
+    display: flex;
+}
+
+.inlineBirthdate > input {
+    flex: 3;
+    height: 30px;
+    margin-top: -8px;
+}
+
+.inlineBirthdate > b {
+    flex: 1;
+}
+
+.tableFoodSelector > select {
+    width: 100%;
+    background-color: #1f2833;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.tableFoodSelector > div {
+    width: 100%;
+    font-size: 15px;
+    color: white; 
+}
+
+.tableFoodSelector > div > div {
+    display: flex;    
+    background-color: #2f3843;    
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+.tableFoodSelector > div > div > div {
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.tableFoodSelector > div > div > button {
+    background-color: transparent;
+    color: white;
+    width: 30%;
+}

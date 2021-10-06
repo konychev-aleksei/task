@@ -1,0 +1,112 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 280px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.form > input, .form > button, .foodSelector, .birthdateSelector {
+    padding-left: 10px;
+    height: 40px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: white;
+    border: 1px solid #45A29E;
+}
+
+.form > button {
+    width: 250px;
+    margin-top: 25px;
+    transition: .3s;
+}
+
+.form > button:hover {
+    background: #66FCF1;
+}
+
+
+.foodSelector, .birthdateSelector {
+    display: flex;
+}
+
+.foodSelector > div, .birthdateSelector > input {
+    display: flex;
+    margin-top: 5px;
+    overflow-x: auto;
+}
+
+.foodSelector > div {
+    flex: 5;
+}
+
+.foodSelector > div > div {
+    margin-right: 5px;
+    padding: 2px 10px;
+    font-size: 14px;
+    background-color: #1F2833;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.foodSelector > div > div > button {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.foodSelector > select, .birthdateSelector > button {
+    background-color: #1F2833;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.foodSelector > select {
+    flex: 1;
+}
+
+.birthdateSelector > input {
+    flex: 1;
+    margin: 0;
+    padding-right: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.birthdateSelector > button {
+    flex-basis: 50px;
+}
+
+::-webkit-calendar-picker-indicator { 
+    filter: invert(1);
+    cursor: pointer;
+}
+
+form > input[type="file"] {
+    visibility: hidden;
+}
+
+.form > label {
+    cursor: pointer;
+    text-align: center;
+    margin: -30px 0 20px 0;
+}
+
+.form > img {
+    width: 200px;
+    height: 200px;
+    margin-left: calc(50% - 100px);
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 3px;
+    background: linear-gradient(to right, #EE4C7C, #66FCF1);
+}
+
+.form > b {
+    margin-top: -10px;
+    color: #EE4C7C;
+}

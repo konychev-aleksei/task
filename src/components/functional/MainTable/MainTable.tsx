@@ -5,7 +5,7 @@ import MainTableCSS from './MainTable.module.css'
 import TableItem from './TableItem'
 
 import { filterParamsType, initialValuesType, CSSModule } from '../../../config/types'
-import { CONFIRMATION_MESSAGE, ARROWS, KEYS, VALUES } from '../../../config/constants'
+import { CONFIRMATION_MESSAGE } from '../../../config/constants'
 
 import * as api from '../../../api/index'
 import { useSelector } from 'react-redux'

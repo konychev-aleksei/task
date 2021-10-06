@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 
     return (
         <div className={ area }>
-            My Company 2021
+            (C) My Company 2021
         </div>
     )
 }

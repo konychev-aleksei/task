@@ -1,0 +1,26 @@
+.split {
+    flex: 1;
+}
+
+.forImage {
+    height: 150px;
+}
+
+.forImage > div > img {
+    margin-top: 5px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.buttonStyle {
+    margin-left: 10px;
+    border-color: #EE4C7C;
+    margin-bottom: 50px;
+    background-color: 'transparent';
+    transition: .3s;
+}
+
+.buttonStyle:hover {
+    background-color: #EE4C7C;
+}

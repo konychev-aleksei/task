@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     return(
         <div className={ area }>
             <h3>My Application</h3>
-            <button onClick={ () => history.push('/user/index') }>Home</button>
+            <button onClick={ () => history.push('/index') }>Home</button>
             <button>
                 <a target="blank" href="/">Swagger</a>
             </button>

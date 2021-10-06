@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css'
 
 import MainTable from './components/functional/MainTable/MainTable'
-import NavigationBar from './components/functional/NavigationBar/NavigationBar'
 import UserForm from './components/functional/UserForm/UserForm'
+import UserInfo from './components/functional/UserInfo/UserInfo'
 
 import Header from './components/pure/Header/Header'
-import UserInfo from './components/pure/UserInfo/UserInfo'
+import Footer from './components/pure/Footer/Footer'
+import NavigationBar from './components/pure/NavigationBar/NavigationBar'
 
 import * as api from './api/index'
-import { foodListType, stringObject } from './config/types'
+import { stringObject } from './config/types'
 import { WRONG_ID_FORMAT } from './config/constants'
 
-import { CANCEL_CHOICE, CHOOSE_ALL } from './config/constants'
+import { CANCEL_CHOICE, CHOOSE_ALL, SETREVERSEDVALUE, SETVALUE } from './config/constants'
 import { useSelector, useDispatch } from 'react-redux'
 
-const SETREVERSEDVALUE = 'SETREVERSEDVALUE', SETVALUE = 'SETVALUE'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -57,39 +57,40 @@ const App = () => {
 
 
   return (
-    <BrowserRouter basename="">
+    <BrowserRouter basename="/user">
       <div className="wrapper">
         <Switch>
-          <Route exact path="/user/index">
+          <Route exact path="/index">
             <NavigationBar />            
             <MainTable
               treatFoodIds={ treatFoodIds }            
               handleGetValue={ handleGetValue }
             />
           </Route>
-          <Route exact path="/user/view/:ID">
+          <Route exact path="/view/:ID">
             <NavigationBar />            
             <UserInfo 
               treatFoodIds={ treatFoodIds }
               foodList={ foodList }
             />
           </Route>      
-          <Route exact path="/user/update/:ID">
+          <Route exact path="/update/:ID">
             <UserForm 
               modify 
               handleGetValue={ handleGetValue }
             />
           </Route>             
-          <Route exact path="/user/create">
+          <Route exact path="/create">
             <UserForm 
               handleGetValue={ handleGetValue }
             />
           </Route>                   
           <Route exact path="*" >
-            <Redirect to="/user/index" />
+            <Redirect to="/index" />
           </Route>
         </Switch>
         <Header />
+        <Footer />
       </div>
     </BrowserRouter>
   )

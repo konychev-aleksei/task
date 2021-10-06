@@ -1,1 +1,11 @@
-/* necessary styles */
+.area {
+    position: fixed;
+    background-color: #1B1C25;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    padding: 10px 0 0 35px;
+    font-size: 14px;
+    color: grey;
+}

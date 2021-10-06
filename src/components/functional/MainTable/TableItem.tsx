@@ -50,10 +50,10 @@ const TableItem:React.FC<TableItemProps> = ({ item, grid, index, major, buttonsR
             <div>{ birthdate }</div>
             <div>{ treatFoodIds(favorite_food_ids) }</div>
             <div className={ buttonsRow }>
-                <button onClick={ () => history.push(`/user/view/${ id }`) }>
+                <button onClick={ () => history.push(`/view/${ id }`) }>
                     <FontAwesomeIcon icon={ faEye } />
                 </button>
-                <button onClick={ () => history.push(`/user/update/${ id }`) }>
+                <button onClick={ () => history.push(`/update/${ id }`) }>
                     <FontAwesomeIcon icon={ faEdit } />
                 </button>
                 <button onClick={ () => deleteItemById(id, photo_id) }>

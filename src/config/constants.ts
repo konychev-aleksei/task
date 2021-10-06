@@ -16,5 +16,7 @@ export const
             VALUES: Array<string> = ['#', 'ID', 'Фото', 'Имя', 'Email', 'Дата рождения', 'Любимая еда', ''],
             KEYS: Array<string> = ['', 'id', '', 'username', 'email', 'birthdate', 'favorite_food_ids', ''],
             FIELDS: Array<string> = ['ID', 'Имя', 'Email', 'Дата рождения', 'Любимая еда', 'Фото'],
-            ARROWS: Array<string> = ['▲', '▼']
+            ARROWS: Array<string> = ['▲', '▼'],
+            SETREVERSEDVALUE = 'SETREVERSEDVALUE', 
+            SETVALUE = 'SETVALUE'
 

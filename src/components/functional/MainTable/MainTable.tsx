@@ -59,8 +59,8 @@ const MainTable: React.FC<MainTableProps> = ({ treatFoodIds, handleGetValue }) =
 
     const universalFilter = (item: initialValuesType) => {
         const idTolerance = !filterParams.id || item.id === filterParams.id,
-              usernameTolerance = !filterParams.username || item.username.toLowerCase().includes(filterParams.username.lowerCase()),
-              emailTolerance = !filterParams.email || item.email.toLowerCase().includes(filterParams.email.lowerCase()),
+              usernameTolerance = !filterParams.username || item.username.toLowerCase().includes(filterParams.username.toLowerCase()),
+              emailTolerance = !filterParams.email || item.email.toLowerCase().includes(filterParams.email.toLowerCase()),
               birthdateStartTolerance = !filterParams.birthdateStart || item.birthdate.split('.').reverse().join('-') >= filterParams.birthdateStart,
               birthdateEndTolerance = !filterParams.birthdateEnd || item.birthdate.split('.').reverse().join('-') <= filterParams.birthdateEnd,
               foodListTolerance = !filterParams.favoriteFood?.length || filterParams.favoriteFood?.filter(foodItem => item.favorite_food_ids.includes(foodItem)).length === filterParams.favoriteFood?.length

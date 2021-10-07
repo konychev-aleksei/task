@@ -66,6 +66,7 @@ const App = () => {
               treatFoodIds={ treatFoodIds }            
               handleGetValue={ handleGetValue }
             />
+            <Footer />
           </Route>
           <Route exact path="/view/:ID">
             <NavigationBar />            
@@ -90,7 +91,6 @@ const App = () => {
           </Route>
         </Switch>
         <Header />
-        <Footer />
       </div>
     </BrowserRouter>
   )
